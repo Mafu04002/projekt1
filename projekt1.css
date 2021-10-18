@@ -1,0 +1,97 @@
+ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+ol{
+    line-height: 30px;
+}
+
+a{
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: black;
+}
+
+a:hover{
+    background-color: rgb(184, 181, 181);
+    color: black;
+}
+
+a:active{
+    background-color: #04AA6D;
+    color: white;
+}
+body{
+    background-color: blanchedalmond;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 70px 130px 620px 25%;
+    grid-template-areas: 
+    "header header"
+    "nav nav"
+    "main aside"
+    "footer footer";
+}
+header{
+    grid-area: header;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.center{
+    text-align: center;
+}
+
+main{
+    grid-area: main;
+}
+
+aside{
+    grid-area: aside;
+}   
+
+table{
+    border-collapse: collapse;
+    width: 1000px;
+    table-layout: fixed;
+}
+
+td{
+    border: 1px solid black;
+    width: auto;
+    height: 35px;
+}
+
+td:nth-child(2), td:nth-child(3){
+    text-align: center;
+}
+
+tr:nth-child(odd){
+    background-color: lightblue;
+}
+
+tr:nth-child(even){
+    background-color: rgb(173, 161, 161);
+    color: white;
+}
+caption{
+    font-size: 22px;
+    text-align: left;
+    margin-bottom: 11px;
+}
+
+#bild{
+    width: 901px;
+}
+
+h1, h2, p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
