@@ -1,12 +1,15 @@
+/*Ger min lista (navigationsmeny) centrerad text och tar bort punkterna*/
 ul{
     list-style-type: none;
     text-align: center;
 }
 
+/*Bestämmer höjden på nummerlistans rader*/
 ol{
     line-height: 30px;
 }
 
+/*Skapar en klass för navigationsmenyn, vänsterjsuterar den, gör textfärgen vit, centrerar texten, lägger en padding, tar bort understrykninge, bestämmer textstorleken, gör bakgrundsfärgen svart*/
 a{
     float: left;
     color: white;
@@ -17,15 +20,19 @@ a{
     background-color: black;
 }
 
+/*Ändrar text- och bakgrundsfärgen på länkar när man håller musen över dem*/
 a:hover{
     background-color: rgb(184, 181, 181);
     color: black;
 }
 
+/*Ändrar text- och bakgrundsfärgen på länkar när man klickar på dem*/
 a:active{
     background-color: #04AA6D;
     color: white;
 }
+
+/*Ändrar bakgrundsfärgen i body, skapar grid, skapar mellanrum mellan grids, skapar två kolumner och fyra rader i griden, bestämmer platsen på olika delar i griden och deras namn*/
 body{
     background-color: blanchedalmond;
     display: grid;
@@ -38,60 +45,80 @@ body{
     "main aside"
     "footer footer";
 }
+
+/*Ger header platsen header i griden*/
 header{
     grid-area: header;
 }
 
+/*Ger footer platsen footer i griden*/
 footer{
     grid-area: footer;
 }
 
-.center{
-    text-align: center;
-}
-
+/*Ger main platsen main i griden*/
 main{
     grid-area: main;
 }
 
+/*Ger aside platsen aside i griden*/
 aside{
     grid-area: aside;
 }   
 
+/*Centrerar texten*/
+.center{
+    text-align: center;
+}
+
+/*Ger tabellen en gräns, bestämmer dess bredd, ger tabellen symetriskt utseende*/
 table{
     border-collapse: collapse;
     width: 1000px;
     table-layout: fixed;
 }
 
+/*Skapar en kant runt olika delar i tabellen, gör dess bredd automatisk, ger varje rad höjden 35px*/
 td{
     border: 1px solid black;
     width: auto;
     height: 35px;
 }
 
+/*Gör att den högra texten i tabellen centreras*/
 td:nth-child(2), td:nth-child(3){
     text-align: center;
 }
 
+/*Ger varannan rad i tabellen bakgrundsfärgen ljusblå*/
 tr:nth-child(odd){
     background-color: lightblue;
 }
 
+/*Ändrar bakgrunds- och textfärgen på varannan rad i tabellen*/
 tr:nth-child(even){
     background-color: rgb(173, 161, 161);
     color: white;
 }
+
+/*Bestämmer tabellrubrikens textstorlek, vänsterjusterar texten, skapar en marginal under*/
 caption{
     font-size: 22px;
     text-align: left;
     margin-bottom: 11px;
 }
 
+/*Skapar ett id med bredden 901px*/
 #bild{
     width: 901px;
 }
 
+/*Bestämmer fonten på rubrikerna och p-elementen*/
 h1, h2, p{
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Gör textstorleken i nummerlistan till 22px*/
+li{
+    font-size: 22px;
 }
